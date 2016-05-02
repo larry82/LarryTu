@@ -1,0 +1,59 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 text-title">
+			<div class="col-md-8 col-md-offset-3 text-title text-center" id="index-cards-left">
+
+				<%= render 'nav_left', active:"projects" %>
+
+				<div class="col-md-12" style="padding:10px; padding-bottom:0;">
+					<div class="col-md-12"  id="index-content">
+						<h1>Peer</h1>
+						<span>Diagnose Students Relationships</span>
+					</div>
+				</div>
+				
+				<div class="col-md-12" style="padding:10px; padding-bottom:0;">
+					<div class="col-md-12"  id="index-content">
+						<h1>Data Visualization</h1>
+						<span>Homeworks of DV Lesson</span>
+					</div>
+				</div>
+
+
+				<div class="col-md-6" style="padding:10px; padding-bottom:0;padding-right:5px;">
+					<div class="col-md-12"  id="index-content">
+						<h1>TV</h1>
+						<span>Advertising Website for Clerk of Kbro</span>
+					</div>
+				</div>
+				<div class="col-md-6" style="padding:10px; padding-bottom:0;padding-left:5px;">
+					<div class="col-md-12"  id="index-content">
+						<h1>This</h1>
+						<span>Website for Introducing My Self </span>
+					</div>
+				</div>
+
+				<%= link_to welcome_index_path do %>
+					<div class="col-md-12">
+						<%= image_tag("right.png", :alt => "right",id:"index-right-btn") %>
+					</div>
+				<% end %>
+			</div>
+		</div>
+		<div class="col-md-6 text-title">
+			<div class="col-md-8 col-md-offset-1 text-title text-center" id="index-cards-right">
+				
+				<%= render 'nav_right', title:"projects"%>
+
+				<div class="col-md-12" id="index-card-content">
+					<%= image_tag("me.jpg", :alt => "me",id:"selfi") %>
+					
+					<div class="col-md-12 content">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia architecto excepturi laudantium veniam nesciunt consequatur fugit deleniti minima ut ab perspiciatis, minus illo fuga? Temporibus unde fuga officia sed accusamus.
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

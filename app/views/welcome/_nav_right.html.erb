@@ -1,0 +1,15 @@
+<div id="index-card-nav" class="text-right col-md-12">
+	<%= Time.now.strftime('%H:%M') %>
+</div>
+<div id="index-card-title" class="col-md-12">
+	<div class="col-md-2">
+		<%= image_tag("left.png", :alt => "right") %>
+	</div>
+	<div class="col-md-8 text-left title">
+		<%= title.humanize unless title == "aboutme" %>
+		<%= "About Me" if title == "aboutme" %>
+	</div>
+	<div class="col-md-2 text-center" id="index-right-icon">
+		<%= image_tag( title+".png", :alt => "info",id:"index-icon") %>
+	</div>
+</div>

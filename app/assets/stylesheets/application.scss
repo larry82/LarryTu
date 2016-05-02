@@ -1,0 +1,29 @@
+
+
+$primary: #00BCD4;// blue
+$dark_primary: #0097A7;// dark blue
+
+
+$accent_color: #FF4081;
+
+$background_color: lighten(#00BCD4,5%); //gray
+$white: #ecf0f1; 
+$yellow:#EED19C;
+$gray:#727272;
+$dark_blue: #2D4059;
+$blue: lighten(#2D4059,5%);
+
+$green_tab: #2ecc71;
+$purple_tab: #8e44ad;
+$blue_tab: #3498db;
+$yellow_tab: #f39c12;
+
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@import "welcome";
+@import "normalize";
+@import "nav";
+

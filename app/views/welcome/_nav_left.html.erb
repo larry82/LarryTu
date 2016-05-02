@@ -1,0 +1,40 @@
+<div id="index-card-nav" class="text-right col-md-12">
+	<%= Time.now.strftime('%H:%M') %>
+</div>
+<!-- nav -->
+<div id="index-card-title" class="text-left col-md-12">
+	<div class="title col-md-6">
+		Larry Tu
+	</div>
+	<div class="title col-md-6 text-right" style="padding-right:0;">
+		<%= image_tag("info.png", :alt => "info",id:"index-title-icon") %>
+		<%= image_tag("three.png", :alt => "three",id:"index-title-icon") %>
+	</div>
+<!-- icon 列 -->
+	<div class="title col-md-12 text-left" style="padding:0px; padding-top:20px;">
+		<%= link_to welcome_index_path do %>
+			<div class="col-md-3 text-center <%=  'icon-active' if active=="aboutme" %>">
+				<%= image_tag("aboutme.png", :alt => "info",id:"index-icon") %>
+			</div>
+		<% end %>
+		<%= link_to education_welcome_index_path do %>
+			<div class="col-md-3 text-center <%=  'icon-active' if active=="education" %>">
+				
+				<%= image_tag("education.png", :alt => "education",id:"index-icon") %>
+			</div>
+		<% end %>
+		<%= link_to achievement_welcome_index_path do %>
+			<div class="col-md-3 text-center <%=  'icon-active' if active=="achievement" %>">
+				
+				<%= image_tag("achievement.png", :alt => "achievement",id:"index-icon") %>
+			</div>
+		<% end %>
+		<%= link_to projects_welcome_index_path do %>
+			<div class="col-md-3 text-center <%=  'icon-active' if active=="projects" %>">
+				
+				<%= image_tag("projects.png", :alt => "projects",id:"index-icon") %>
+			</div>
+		<% end %>
+	</div>
+</div>
+<!-- nav:結束 -->
