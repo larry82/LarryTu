@@ -1,0 +1,36 @@
+#teeth{
+	padding-top: 30px;
+	h1{
+		color: #3b3a36;
+		margin-bottom: 60px;
+	}
+	img{
+		border-radius: 5px;
+		width: 400px;
+	}
+	.btn-comp{
+		margin-top: 30px;
+		width: 396px;
+		padding: 15px;
+		font-size: 18px;
+		border-radius:5px;
+		background-color: #3fb0ac;
+		color: white;
+		&:hover{
+			opacity:0.8;
+		}
+	}
+
+}
+
+#thanks{
+	h1{
+		font-size: 48px;
+		margin-top: 200px;
+		color: #3b3a36;
+		margin-bottom: 15px;	
+	}
+	.highlight{
+		color: #3fb0ac;
+	}
+}

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pic name:</strong>
+  <%= @tooth.pic_name %>
+</p>
+
+<p>
+  <strong>Times:</strong>
+  <%= @tooth.times %>
+</p>
+
+<%= link_to 'Edit', edit_tooth_path(@tooth) %> |
+<%= link_to 'Back', teeth_path %>
