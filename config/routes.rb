@@ -1,8 +1,15 @@
 Rails.application.routes.draw do
-  root 'welcome#index'
-  resources :welcome do 
-    collection {get 'education'}
-    collection {get 'achievement'}
-    collection {get 'projects'}
+  resources :teeth do 
+  	collection {get 'comparison'}
+  	collection {get 'thanks'}
+  	member do 
+  		patch 'update_times'
+  	end
   end
+  root 'teeth#comparison'
+  # resources :welcome do 
+  #   collection {get 'education'}
+  #   collection {get 'achievement'}
+  #   collection {get 'projects'}
+  # end
 end
